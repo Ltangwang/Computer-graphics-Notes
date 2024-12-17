@@ -1,14 +1,20 @@
 site_name: Notebook
 edit_uri: ""
-# repo_name: 
-# repo_url: https://github.com/
+repo_name: Computer-graphics-Notes
+repo_url: https://github.com/Ltangwang/Computer-graphics-Notes
 copyright: Copyright &copy; all right reserved
 
 nav:
-  - Home: index.md
-  - Computer Graphics: ./图形学/cg.md
-  - 人生感想: ./人生感想/qa.md
-  - assignments: ./作业/a.md
+  - Home: 
+    - index.md
+    - Computer Graphics: 
+      - ./图形学/cg.md
+      - Games 101:
+        - 作业3: 
+          - ./图形学/Games101/Assignment3/code_answer.md
+
+
+
 
 theme:
   name: material
