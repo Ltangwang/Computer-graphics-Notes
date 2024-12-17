@@ -1,0 +1,97 @@
+site_name: Notebook
+edit_uri: ""
+# repo_name: 
+# repo_url: https://github.com/
+copyright: Copyright &copy; all right reserved
+
+nav:
+  - Home: index.md
+  - Computer Graphics: ./图形学/cg.md
+  - 人生感想: ./人生感想/qa.md
+  - assignments: ./作业/a.md
+
+theme:
+  name: material
+  # custom_dir: overrides
+  language: zh
+
+  # 设置网页的字体，来源于Google Font
+  font:
+    # 文本的字体
+    text: Noto Sans Simplified Chinese
+    # 代码的字体
+    code: JetBrains Mono
+
+  icon:
+    logo: material/library-outline
+    repo: fontawesome/brands/git-alt
+  
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: cyan
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      # 主色调
+      primary: indigo
+      # 点击时显示的颜色
+      #accent: amber
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tracking
+    #- toc.integrate   # integration for the table of content
+    - toc.follow
+    - navigation.top  # back to top button
+    - navigation.footer
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  
+  plugins:
+  - search:
+      lang: zh
+
+# markdown插件，丰富浏览体验
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - meta
+  - pymdownx.betterem
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - abbr
+
