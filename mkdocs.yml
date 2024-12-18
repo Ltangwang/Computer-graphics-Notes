@@ -24,7 +24,7 @@ theme:
   # 设置网页的字体，来源于Google Font
   font:
     # 文本的字体
-    text: Noto Sans Simplified Chinese
+    text: Noto Sans SC
     # 代码的字体
     code: JetBrains Mono
 
@@ -67,9 +67,11 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
+    - search.suggest
+    - search.highlight
   
   plugins:
-  - search:
+    - search:
       lang: zh
 
 # markdown插件，丰富浏览体验
@@ -78,7 +80,6 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
-  - meta
   - pymdownx.betterem
   - pymdownx.highlight:
       anchor_linenums: true
@@ -100,4 +101,9 @@ markdown_extensions:
   - md_in_html
   - tables
   - abbr
+  - pymdownx.blocks.caption
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
